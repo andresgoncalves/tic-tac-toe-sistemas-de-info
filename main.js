@@ -2,7 +2,7 @@ class Game {
   constructor() {
     const datos = JSON.parse(localStorage.getItem('datos'));
 
-    console.log('El último ganador fue: ' + datos.ultimoGanador);
+    console.log('El último ganador fue: ' + datos?.ultimoGanador);
 
     this.tablero = ['.', '.', '.', '.', '.', '.', '.', '.', '.'];
     this.turno = 'x';
